@@ -62,12 +62,18 @@ const categories = [
 
 // よくある悩みカード
 const worries = [
-  { q: "確定申告って何をすればいい？", href: "/tax/kakutei-shinkoku" },
-  { q: "インボイスって登録すべき？", href: "/tax/invoice" },
+  { q: "確定申告って何をすればいいの？", href: "/guides/kakutei-shinkoku" },
+  { q: "インボイス、登録すべき？損する？", href: "/guides/invoice" },
+  { q: "国民健康保険が高すぎる…", href: "/insurance/kenko-hoken" },
+  { q: "節税って何をすればいいかわからない", href: "/savings" },
+  { q: "開業届ってどこに出すの？", href: "/startup" },
+  { q: "住民税の請求が突然来てびっくりした", href: "/tax/jumin-zei" },
   { q: "フリーランスの健康保険、どれが得？", href: "/insurance/kenko-hoken" },
   { q: "経費にできるものって何？", href: "/savings/keihi" },
   { q: "青色申告と白色申告の違いは？", href: "/tax/blue-white" },
   { q: "iDeCoって本当に節税になる？", href: "/savings/ideco" },
+  { q: "副業収入の確定申告ってどうするの？", href: "/tax/fukugyo" },
+  { q: "消費税の納税義務、いつから始まる？", href: "/tax/shohi-zei" },
 ];
 
 // 2026年重要トピック
@@ -120,7 +126,7 @@ export default function HomePage() {
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <Link
-                href="/tools"
+                href="/tools/teardown"
                 className="inline-flex items-center justify-center gap-2 bg-emerald-500 border border-emerald-400 text-white font-semibold px-6 py-3 rounded-xl hover:bg-emerald-400 transition-colors"
               >
                 <Calculator className="w-4 h-4" />
@@ -132,7 +138,7 @@ export default function HomePage() {
       </section>
 
       {/* よくある悩みセクション */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gradient-to-b from-emerald-50 to-white">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-10">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
@@ -215,11 +221,11 @@ export default function HomePage() {
             </div>
             <div className="flex flex-col gap-3 shrink-0">
               <Link
-                href="/tools"
+                href="/tools/teardown"
                 className="inline-flex items-center justify-center gap-2 bg-white text-emerald-700 font-bold px-6 py-3 rounded-xl hover:bg-emerald-50 transition-colors whitespace-nowrap"
               >
                 <Calculator className="w-4 h-4" />
-                手取り計算機を使う
+                📊 手取りを計算する
               </Link>
               <Link
                 href="/tools/invoice"
