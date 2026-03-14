@@ -7,7 +7,6 @@ import {
   ClipboardCheck,
   ChevronRight,
   Wrench,
-  Lock,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -106,21 +105,11 @@ export default function ToolsPage() {
                   href={tool.href}
                   className="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm hover:shadow-md hover:border-emerald-200 transition-all group flex flex-col"
                 >
-                  <div className="flex items-start justify-between mb-4">
+                  <div className="mb-4">
                     <div
                       className={`w-11 h-11 rounded-xl flex items-center justify-center ${tool.iconBg}`}
                     >
                       <Icon className={`w-5 h-5 ${tool.iconColor}`} />
-                    </div>
-                    <div className="flex items-center gap-2">
-                      {tool.badge && (
-                        <span className="text-xs bg-emerald-100 text-emerald-700 font-semibold px-2.5 py-1 rounded-full">
-                          {tool.badge}
-                        </span>
-                      )}
-                      <span className="text-xs bg-emerald-50 text-emerald-600 font-medium px-2 py-0.5 rounded-full border border-emerald-200">
-                        使える
-                      </span>
                     </div>
                   </div>
                   <h2 className="font-bold text-gray-900 mb-2 group-hover:text-emerald-700 transition-colors">
@@ -142,17 +131,11 @@ export default function ToolsPage() {
                 key={tool.href}
                 className="bg-gray-50 border border-gray-100 rounded-2xl p-5 flex flex-col opacity-75"
               >
-                <div className="flex items-start justify-between mb-4">
+                <div className="mb-4">
                   <div
                     className={`w-11 h-11 rounded-xl flex items-center justify-center ${tool.iconBg} opacity-60`}
                   >
                     <Icon className={`w-5 h-5 ${tool.iconColor}`} />
-                  </div>
-                  <div className="flex items-center gap-1.5 text-gray-400">
-                    <Lock className="w-3 h-3" />
-                    <span className="text-xs font-medium bg-gray-200 text-gray-500 px-2 py-0.5 rounded-full">
-                      近日公開
-                    </span>
                   </div>
                 </div>
                 <h2 className="font-bold text-gray-500 mb-2">{tool.title}</h2>

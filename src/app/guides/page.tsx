@@ -18,13 +18,10 @@ export const metadata: Metadata = {
   },
 };
 
-type ArticleStatus = "published" | "coming_soon";
-
 interface Article {
   title: string;
   href: string;
   description: string;
-  status: ArticleStatus;
 }
 
 interface Category {
@@ -50,19 +47,19 @@ const categories: Category[] = [
         title: "確定申告とは？フリーランスがやることを全部まとめました",
         href: "/guides/kakutei-shinkoku",
         description: "ステップ形式で解説。青色申告・白色申告の違いも比較表付きで説明します。",
-        status: "published",
+
       },
       {
         title: "青色申告65万円控除を最大限に活用する方法",
         href: "/guides/blue-declaration",
         description: "e-Taxで申告するだけで最大65万円の控除。手順と注意点を解説。",
-        status: "published",
+
       },
       {
         title: "経費判定チェッカー（ツール）",
         href: "/tools/expense",
         description: "自宅兼事務所・スマホ・書籍…カテゴリと用途を入力するだけで経費判定できます。",
-        status: "published",
+
       },
     ],
   },
@@ -78,13 +75,13 @@ const categories: Category[] = [
         title: "インボイス制度をわかりやすく解説",
         href: "/guides/invoice",
         description: "登録すべき？しない？判定チャートと2026年の重要変更を解説します。",
-        status: "published",
+
       },
       {
         title: "インボイス登録後の請求書の書き方",
         href: "/guides/invoice-format",
         description: "適格請求書に必要な記載事項と、freee・マネフォでの設定方法。",
-        status: "published",
+
       },
     ],
   },
@@ -100,13 +97,13 @@ const categories: Category[] = [
         title: "フリーランスの社会保険・国民健康保険 完全ガイド",
         href: "/guides/shakai-hoken",
         description: "国保 vs 任意継続の比較・保険料の仕組み・軽減制度を解説。",
-        status: "published",
+
       },
       {
         title: "国民年金の免除制度｜収入が少ない年に使える制度",
         href: "/guides/nenkin-menjo",
         description: "所得が少ない場合に保険料を全額・半額免除できる制度の申請方法。",
-        status: "published",
+
       },
     ],
   },
@@ -122,25 +119,25 @@ const categories: Category[] = [
         title: "フリーランスの節税ガイド｜合法的に税金を減らす方法",
         href: "/guides/setsuzei",
         description: "iDeCo・小規模企業共済・ふるさと納税・経費…効果の大きい順に解説。",
-        status: "published",
+
       },
       {
         title: "iDeCoの始め方｜フリーランスにとってのメリット",
         href: "/guides/ideco",
         description: "月最大6.8万円の掛金が全額所得控除。開設手順と注意点を解説。",
-        status: "published",
+
       },
       {
         title: "小規模企業共済とは？退職金代わりにもなる節税術",
         href: "/guides/shoukibo-kyosai",
         description: "年間最大84万円が所得控除。フリーランスの老後に備える制度。",
-        status: "published",
+
       },
       {
         title: "ふるさと納税｜フリーランスの節税活用法",
         href: "/guides/furusato-nozei",
         description: "確定申告と組み合わせるとお得。ワンストップ特例との違いも解説。",
-        status: "published",
+
       },
     ],
   },
@@ -156,13 +153,13 @@ const categories: Category[] = [
         title: "フリーランス開業ガイド｜最初にやること全まとめ",
         href: "/guides/kaigyo",
         description: "開業届・青色申告申請書・国保加入…開業チェックリスト付きで解説。",
-        status: "published",
+
       },
       {
         title: "開業届の書き方｜記入例付き完全解説",
         href: "/guides/kaigyodoke",
         description: "職業欄・屋号・所得の種類…迷いやすい項目を記入例付きで解説。",
-        status: "published",
+
       },
     ],
   },
@@ -240,49 +237,23 @@ export default function GuidesPage() {
 
               {/* 記事カード */}
               <div className="space-y-2 pl-0 md:pl-2">
-                {cat.articles.map((article) =>
-                  article.status === "published" ? (
-                    <Link
-                      key={article.href}
-                      href={article.href}
-                      className={`flex items-start gap-4 bg-white border border-gray-100 rounded-xl px-5 py-4 transition-all group shadow-sm ${colors.link} hover:shadow-md`}
-                    >
-                      <div className="flex-1 min-w-0">
-                        <div className="flex items-center gap-2 mb-1">
-                          <h3 className="font-semibold text-gray-800 text-sm leading-snug group-hover:text-current">
-                            {article.title}
-                          </h3>
-                          <span className="shrink-0 text-xs bg-emerald-100 text-emerald-700 font-medium px-2 py-0.5 rounded-full">
-                            公開中
-                          </span>
-                        </div>
-                        <p className="text-xs text-gray-500 leading-relaxed">
-                          {article.description}
-                        </p>
-                      </div>
-                      <ChevronRight className="w-4 h-4 text-gray-400 shrink-0 mt-0.5 group-hover:translate-x-0.5 transition-transform" />
-                    </Link>
-                  ) : (
-                    <div
-                      key={article.href}
-                      className="flex items-start gap-4 bg-gray-50 border border-gray-100 rounded-xl px-5 py-4"
-                    >
-                      <div className="flex-1 min-w-0">
-                        <div className="flex items-center gap-2 mb-1">
-                          <h3 className="font-semibold text-gray-400 text-sm leading-snug">
-                            {article.title}
-                          </h3>
-                          <span className="shrink-0 text-xs bg-gray-200 text-gray-500 font-medium px-2 py-0.5 rounded-full">
-                            近日公開
-                          </span>
-                        </div>
-                        <p className="text-xs text-gray-400 leading-relaxed">
-                          {article.description}
-                        </p>
-                      </div>
+                {cat.articles.map((article) => (
+                  <Link
+                    key={article.href}
+                    href={article.href}
+                    className={`flex items-start gap-4 bg-white border border-gray-100 rounded-xl px-5 py-4 transition-all group shadow-sm ${colors.link} hover:shadow-md`}
+                  >
+                    <div className="flex-1 min-w-0">
+                      <h3 className="font-semibold text-gray-800 text-sm leading-snug mb-1 group-hover:text-current">
+                        {article.title}
+                      </h3>
+                      <p className="text-xs text-gray-500 leading-relaxed">
+                        {article.description}
+                      </p>
                     </div>
-                  )
-                )}
+                    <ChevronRight className="w-4 h-4 text-gray-400 shrink-0 mt-0.5 group-hover:translate-x-0.5 transition-transform" />
+                  </Link>
+                ))}
               </div>
             </section>
           );
