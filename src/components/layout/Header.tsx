@@ -6,10 +6,10 @@ import { Menu, X, Calculator } from "lucide-react";
 
 const navItems = [
   { label: "ホーム", href: "/" },
-  { label: "税金", href: "/tax" },
-  { label: "社会保険", href: "/insurance" },
-  { label: "開業", href: "/startup" },
-  { label: "節税", href: "/savings" },
+  { label: "ガイド", href: "/guides" },
+  { label: "税金", href: "/guides/kakutei-shinkoku" },
+  { label: "社会保険", href: "/guides/shakai-hoken" },
+  { label: "節税", href: "/guides/setsuzei" },
   { label: "計算ツール", href: "/tools" },
 ];
 

@@ -53,9 +53,9 @@ const tools: Tool[] = [
     icon: Shield,
     title: "国保料シミュレーター",
     description:
-      "前年の所得から国民健康保険料の目安を試算します。都道府県・市区町村ごとの料率に対応予定。",
+      "前年の所得から国民健康保険料の目安を試算します。主要都市の料率に対応。軽減制度（7割・5割・2割）の判定も表示します。",
     href: "/tools/kokuho",
-    status: "coming_soon",
+    status: "available",
     iconBg: "bg-purple-100",
     iconColor: "text-purple-600",
   },
@@ -63,9 +63,9 @@ const tools: Tool[] = [
     icon: ClipboardCheck,
     title: "経費判定チェッカー",
     description:
-      "「これは経費になる？」をカテゴリ別にチェック。自宅兼事務所・スマホ・書籍・交通費など、按分の考え方も解説します。",
+      "「これは経費になる？」をカテゴリ・用途から判定。按分が必要なものは計算方法も表示。よくある経費の一覧も確認できます。",
     href: "/tools/expense",
-    status: "coming_soon",
+    status: "available",
     iconBg: "bg-amber-100",
     iconColor: "text-amber-600",
   },
