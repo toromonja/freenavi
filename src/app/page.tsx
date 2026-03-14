@@ -241,20 +241,11 @@ export default function HomePage() {
       {/* 最新の制度変更 */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="flex items-center justify-between mb-8">
-            <div>
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">
-                2026年 重要トピック
-              </h2>
-              <p className="text-gray-500 text-sm">最新の制度改正・変更点をまとめています</p>
-            </div>
-            <Link
-              href="/news"
-              className="hidden sm:flex items-center gap-1 text-emerald-600 hover:text-emerald-700 text-sm font-medium"
-            >
-              すべて見る
-              <ChevronRight className="w-4 h-4" />
-            </Link>
+          <div className="mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">
+              2026年 重要トピック
+            </h2>
+            <p className="text-gray-500 text-sm">最新の制度改正・変更点をまとめています</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {recentTopics.map((topic) => (
@@ -275,15 +266,6 @@ export default function HomePage() {
                 <p className="text-xs text-gray-400">{topic.date}</p>
               </Link>
             ))}
-          </div>
-          <div className="text-center mt-6 sm:hidden">
-            <Link
-              href="/news"
-              className="inline-flex items-center gap-1 text-emerald-600 text-sm font-medium"
-            >
-              すべてのトピックを見る
-              <ChevronRight className="w-4 h-4" />
-            </Link>
           </div>
         </div>
       </section>
