@@ -5,8 +5,10 @@ import FurusatoAccordion from "./FurusatoAccordion";
 
 export const metadata: Metadata = {
   title: "フリーランスのふるさと納税｜確定申告での控除の受け方",
-  description:
-    "フリーランスのふるさと納税の注意点・確定申告での申告方法・控除上限額の目安・おすすめの流れを初心者向けに解説します。",
+  description: "ワンストップ特例が使えないフリーランスのふるさと納税の正しいやり方を解説。",
+  alternates: {
+    canonical: "https://freenavi.toromonja.com/guides/furusato-nozei",
+  },
 };
 
 const limitTable = [

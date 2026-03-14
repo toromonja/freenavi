@@ -3,8 +3,11 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "プライバシーポリシー | freenavi",
-  description: "freenavのプライバシーポリシー。取得する情報・Cookieの使用・お問い合わせ先について説明します。",
+  title: "プライバシーポリシー",
+  description: "freenavのプライバシーポリシーです。",
+  alternates: {
+    canonical: "https://freenavi.toromonja.com/privacy",
+  },
 };
 
 const LAST_UPDATED = "2026年3月14日";

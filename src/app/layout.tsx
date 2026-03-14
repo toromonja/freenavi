@@ -14,21 +14,50 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://freenavi.toromonja.com";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
-    default: "freenavi - フリーランスの税金・制度ガイド",
+    default: "freenavi｜フリーランスの税金・制度ガイド",
     template: "%s | freenavi",
   },
-  description:
-    "確定申告、インボイス、社会保険、節税…フリーランスに必要な税務・制度情報をわかりやすく解説。手取り計算ツールも無料で使えます。",
-  keywords: ["フリーランス", "確定申告", "インボイス", "節税", "手取り計算", "社会保険"],
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL ?? "https://freenavi.toromonja.com"
-  ),
+  description: "フリーランスの確定申告・インボイス・社会保険・節税をわかりやすく解説。手取り計算ツール・国保シミュレーターも無料で使えます。",
+  keywords: ["フリーランス", "確定申告", "インボイス", "国民健康保険", "節税", "青色申告", "iDeCo", "手取り計算"],
+  authors: [{ name: "freenavi" }],
+  creator: "freenavi",
   openGraph: {
     type: "website",
-    siteName: "freenavi",
     locale: "ja_JP",
+    url: siteUrl,
+    siteName: "freenavi",
+    title: "freenavi｜フリーランスの税金・制度ガイド",
+    description: "フリーランスの確定申告・インボイス・社会保険・節税をわかりやすく解説。手取り計算ツールも無料。",
+    images: [
+      {
+        url: "/ogp.svg",
+        width: 1200,
+        height: 630,
+        alt: "freenavi｜フリーランスの税金・制度ガイド",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "freenavi｜フリーランスの税金・制度ガイド",
+    description: "フリーランスの確定申告・インボイス・社会保険・節税をわかりやすく解説。手取り計算ツールも無料。",
+    images: ["/ogp.svg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  alternates: {
+    canonical: siteUrl,
   },
 };
 

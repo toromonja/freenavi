@@ -11,9 +11,11 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "フリーランス完全ガイド | 税金・保険・開業をわかりやすく解説",
-  description:
-    "確定申告・インボイス・国民健康保険・節税・開業届…フリーランスに必要な知識を全部まとめました。初心者でもわかりやすい解説です。",
+  title: "ガイド一覧｜フリーランス完全ガイド",
+  description: "確定申告・インボイス・社会保険・節税・開業届まで、フリーランスに必要な知識をすべて解説。",
+  alternates: {
+    canonical: "https://freenavi.toromonja.com/guides",
+  },
 };
 
 type ArticleStatus = "published" | "coming_soon";

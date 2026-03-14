@@ -4,9 +4,11 @@ import { Receipt, CheckCircle, AlertTriangle, ArrowRight, Info } from "lucide-re
 import InvoiceFormatAccordion from "./InvoiceFormatAccordion";
 
 export const metadata: Metadata = {
-  title: "インボイス対応の請求書の書き方｜必須項目チェックリスト",
-  description:
-    "適格請求書（インボイス）に必要な6つの記載項目を解説。請求書テンプレートの見本・よくある疑問もまとめました。",
+  title: "インボイス対応の請求書の書き方",
+  description: "適格請求書に必要な6項目と書き方を解説。登録番号の記載方法も。",
+  alternates: {
+    canonical: "https://freenavi.toromonja.com/guides/invoice-format",
+  },
 };
 
 const requiredItems = [

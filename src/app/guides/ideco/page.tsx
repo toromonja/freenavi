@@ -3,9 +3,11 @@ import Link from "next/link";
 import { PiggyBank, CheckCircle, AlertTriangle, ArrowRight, TrendingUp } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "フリーランスのiDeCo完全ガイド｜節税しながら老後に備える",
-  description:
-    "iDeCoの3つの税優遇・フリーランスの上限額・節税シミュレーション・始め方・デメリットを初心者向けに解説します。",
+  title: "フリーランスのiDeCo完全ガイド",
+  description: "フリーランスがiDeCoで節税しながら老後に備える方法。上限額・始め方・デメリットも解説。",
+  alternates: {
+    canonical: "https://freenavi.toromonja.com/guides/ideco",
+  },
 };
 
 const taxBenefits = [

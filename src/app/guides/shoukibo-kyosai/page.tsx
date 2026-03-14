@@ -4,8 +4,10 @@ import { PiggyBank, CheckCircle, AlertTriangle, ArrowRight, Info } from "lucide-
 
 export const metadata: Metadata = {
   title: "小規模企業共済でフリーランスが退職金を作る方法",
-  description:
-    "小規模企業共済のメリット・節税シミュレーション・加入条件・受け取り方・iDeCoとの比較を初心者向けにわかりやすく解説します。",
+  description: "小規模企業共済の節税効果・加入方法・iDeCoとの違いをわかりやすく解説。",
+  alternates: {
+    canonical: "https://freenavi.toromonja.com/guides/shoukibo-kyosai",
+  },
 };
 
 const merits = [

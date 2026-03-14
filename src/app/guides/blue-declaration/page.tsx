@@ -4,9 +4,11 @@ import { FileText, CheckCircle, AlertTriangle, ArrowRight, Star } from "lucide-r
 import BlueDeclarationAccordion from "./BlueDeclarationAccordion";
 
 export const metadata: Metadata = {
-  title: "青色申告とは？白色との違いと65万円控除の受け方",
-  description:
-    "青色申告のメリット・白色との比較・65万円控除の条件・申請手順を初心者向けにわかりやすく解説。帳簿ソフトの選び方も紹介します。",
+  title: "青色申告とは？65万円控除の受け方",
+  description: "青色申告のメリット・白色との違い・申請方法を解説。e-Taxで65万円控除を受けよう。",
+  alternates: {
+    canonical: "https://freenavi.toromonja.com/guides/blue-declaration",
+  },
 };
 
 const merits = [

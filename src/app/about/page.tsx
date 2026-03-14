@@ -3,9 +3,11 @@ import Link from "next/link";
 import { Calculator, Shield, BookOpen, ArrowRight, CheckCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "freenavについて | フリーランス税務・制度ガイド",
-  description:
-    "freenavは、フリーランス・個人事業主が税金・社会保険・開業などの制度をわかりやすく理解できるガイドサービスです。",
+  title: "freenavについて",
+  description: "freenavはフリーランスの税務・制度情報をわかりやすく伝えるガイドサービスです。",
+  alternates: {
+    canonical: "https://freenavi.toromonja.com/about",
+  },
 };
 
 const features = [

@@ -3,9 +3,11 @@ import Link from "next/link";
 import { Shield, AlertTriangle, CheckCircle, ArrowRight, Info } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "国民年金が払えない時の免除・猶予制度を使おう",
-  description:
-    "所得が少ない年に使える国民年金の免除・猶予制度を解説。申請方法・年金額への影響・追納制度まで初心者向けにわかりやすくまとめました。",
+  title: "国民年金の免除・猶予制度ガイド",
+  description: "収入が少ない時期に使える国民年金の免除・猶予制度の申請方法と年金への影響を解説。",
+  alternates: {
+    canonical: "https://freenavi.toromonja.com/guides/nenkin-menjo",
+  },
 };
 
 const exemptionLevels = [

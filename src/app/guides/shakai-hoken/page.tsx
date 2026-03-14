@@ -3,9 +3,11 @@ import { Shield, CheckCircle, AlertCircle, ArrowRight, Info } from "lucide-react
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "フリーランスの社会保険・国民健康保険 完全ガイド",
-  description:
-    "フリーランスの国民健康保険・任意継続の比較、保険料の仕組み、軽減制度、国民年金の免除制度、退職時の手続きをわかりやすく解説します。",
+  title: "フリーランスの社会保険・国民健康保険ガイド",
+  description: "フリーランスの国民健康保険料の計算方法、任意継続との比較、軽減制度をわかりやすく解説。",
+  alternates: {
+    canonical: "https://freenavi.toromonja.com/guides/shakai-hoken",
+  },
 };
 
 const comparisonRows = [

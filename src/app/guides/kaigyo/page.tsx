@@ -5,8 +5,10 @@ import KaigyoChecklist from "./KaigyoChecklist";
 
 export const metadata: Metadata = {
   title: "フリーランス開業ガイド｜最初にやること全まとめ",
-  description:
-    "フリーランス開業に必要な手続きを全まとめ。開業届・青色申告申請・国保加入・国民年金の手続きをチェックリスト形式でわかりやすく解説します。",
+  description: "開業届・青色申告申請書・国保切り替えなど、フリーランス開業時にやることをチェックリストで解説。",
+  alternates: {
+    canonical: "https://freenavi.toromonja.com/guides/kaigyo",
+  },
 };
 
 const kaigyoFields = [

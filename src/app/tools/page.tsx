@@ -11,9 +11,11 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "計算ツール・シミュレーター | freenavi",
-  description:
-    "手取りシミュレーター・インボイス影響試算・国保料シミュレーターなど、フリーランスに役立つ無料計算ツールを提供しています。",
+  title: "計算ツール・シミュレーター一覧",
+  description: "手取りシミュレーター・国保料計算・インボイス影響試算・経費判定など無料ツールを提供。",
+  alternates: {
+    canonical: "https://freenavi.toromonja.com/tools",
+  },
 };
 
 interface Tool {

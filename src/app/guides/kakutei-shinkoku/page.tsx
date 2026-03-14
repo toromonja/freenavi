@@ -14,9 +14,11 @@ import Link from "next/link";
 import KakuteiShinkokuAccordion from "./KakuteiShinkokuAccordion";
 
 export const metadata: Metadata = {
-  title: "確定申告とは？フリーランスがやることを全部まとめました",
-  description:
-    "フリーランスの確定申告を初心者向けにわかりやすく解説。青色申告・白色申告の違い、申告の手順、よくある疑問にすべて答えます。",
+  title: "確定申告とは？フリーランスがやることを全まとめ",
+  description: "フリーランスの確定申告を初心者向けに解説。青色・白色の違い、手順、期限まで全部わかります。",
+  alternates: {
+    canonical: "https://freenavi.toromonja.com/guides/kakutei-shinkoku",
+  },
 };
 
 const steps = [
@@ -160,6 +162,20 @@ const textColorMap: Record<string, string> = {
 export default function KakuteiShinkokuPage() {
   return (
     <div className="min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "確定申告とは？フリーランスがやることを全部まとめました",
+            "description": "フリーランスの確定申告を初心者向けに解説",
+            "url": "https://freenavi.toromonja.com/guides/kakutei-shinkoku",
+            "author": { "@type": "Organization", "name": "freenavi" },
+            "publisher": { "@type": "Organization", "name": "freenavi" }
+          }),
+        }}
+      />
       {/* ページヘッダー */}
       <div className="bg-gradient-to-br from-emerald-600 to-teal-600 text-white">
         <div className="max-w-4xl mx-auto px-4 py-12 md:py-16">

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import {
   FileText,
@@ -9,6 +10,14 @@ import {
   AlertCircle,
   ChevronRight,
 } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "freenavi｜フリーランスの税金・制度ガイド",
+  description: "フリーランスの確定申告・インボイス・社会保険・節税をわかりやすく解説。手取り計算ツール無料。",
+  alternates: {
+    canonical: "https://freenavi.toromonja.com",
+  },
+};
 
 // カテゴリナビゲーション
 const categories = [
@@ -79,6 +88,23 @@ const worries = [
 export default function HomePage() {
   return (
     <div className="min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "freenavi",
+            "url": "https://freenavi.toromonja.com",
+            "description": "フリーランスの税金・制度ガイドサービス",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://freenavi.toromonja.com/guides",
+              "query-input": "required name=search_term_string"
+            }
+          }),
+        }}
+      />
       {/* ヒーローセクション */}
       <section className="bg-gradient-to-br from-emerald-600 to-emerald-700 text-white">
         <div className="max-w-6xl mx-auto px-4 py-20 md:py-28">

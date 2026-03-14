@@ -12,8 +12,10 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "フリーランスの節税ガイド｜合法的に税金を減らす方法",
-  description:
-    "フリーランスが実践できる節税方法を効果の大きい順に解説。青色申告・iDeCo・小規模企業共済・ふるさと納税・経費の最適化まで網羅。",
+  description: "iDeCo・小規模企業共済・青色申告・ふるさと納税など、フリーランスが使える節税方法を解説。",
+  alternates: {
+    canonical: "https://freenavi.toromonja.com/guides/setsuzei",
+  },
 };
 
 const impactTable = [

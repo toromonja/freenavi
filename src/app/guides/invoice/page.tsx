@@ -13,9 +13,11 @@ import Link from "next/link";
 import InvoiceAccordion from "./InvoiceAccordion";
 
 export const metadata: Metadata = {
-  title: "インボイス制度をわかりやすく解説 | 登録すべき？しなくていい？",
-  description:
-    "フリーランス向けにインボイス制度を解説。登録すべきか判定チャート、2026年の経過措置変更、登録手順、メリット・デメリット比較表をまとめました。",
+  title: "インボイス制度をわかりやすく解説｜登録すべき？",
+  description: "インボイス制度の基本から登録判断、2026年の経過措置変更まで初心者向けに解説します。",
+  alternates: {
+    canonical: "https://freenavi.toromonja.com/guides/invoice",
+  },
 };
 
 const steps = [

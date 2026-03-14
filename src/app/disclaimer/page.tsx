@@ -3,9 +3,11 @@ import Link from "next/link";
 import { AlertTriangle, ArrowRight, ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "免責事項 | freenavi",
-  description:
-    "freenavの免責事項。提供する情報の正確性・計算結果の取り扱い・専門家への相談推奨について説明します。",
+  title: "免責事項",
+  description: "freenavの免責事項です。",
+  alternates: {
+    canonical: "https://freenavi.toromonja.com/disclaimer",
+  },
 };
 
 const LAST_UPDATED = "2026年3月14日";

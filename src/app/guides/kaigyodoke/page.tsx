@@ -3,9 +3,11 @@ import Link from "next/link";
 import { Briefcase, CheckCircle, AlertTriangle, ArrowRight, Info } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "開業届の書き方と提出方法｜青色申告申請書も同時に出そう",
-  description:
-    "開業届の各記入項目を記入例付きで解説。青色申告承認申請書との同時提出の重要性・提出方法・提出後にやることまでまとめました。",
+  title: "開業届の書き方と提出方法",
+  description: "開業届の各項目の書き方・提出方法を解説。青色申告承認申請書の同時提出も必須！",
+  alternates: {
+    canonical: "https://freenavi.toromonja.com/guides/kaigyodoke",
+  },
 };
 
 const fields = [
