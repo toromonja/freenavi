@@ -24,7 +24,7 @@ const categories = [
   {
     icon: FileText,
     label: "税金",
-    href: "/tax",
+    href: "/guides/kakutei-shinkoku",
     description: "確定申告・所得税・消費税の基礎から実践まで",
     colorClass: "text-blue-600",
     iconBg: "bg-blue-100",
@@ -33,7 +33,7 @@ const categories = [
   {
     icon: Shield,
     label: "社会保険",
-    href: "/insurance",
+    href: "/guides/shakai-hoken",
     description: "国民健康保険・国民年金・任意継続の選び方",
     colorClass: "text-purple-600",
     iconBg: "bg-purple-100",
@@ -42,7 +42,7 @@ const categories = [
   {
     icon: Briefcase,
     label: "開業",
-    href: "/startup",
+    href: "/guides/kaigyo",
     description: "開業届の出し方・青色申告のはじめ方",
     colorClass: "text-orange-600",
     iconBg: "bg-orange-100",
@@ -51,7 +51,7 @@ const categories = [
   {
     icon: PiggyBank,
     label: "節税",
-    href: "/savings",
+    href: "/guides/setsuzei",
     description: "経費・小規模企業共済・iDeCoで手取りを増やす",
     colorClass: "text-emerald-600",
     iconBg: "bg-emerald-100",
@@ -72,16 +72,16 @@ const categories = [
 const worries = [
   { q: "確定申告って何をすればいいの？", href: "/guides/kakutei-shinkoku" },
   { q: "インボイス、登録すべき？損する？", href: "/guides/invoice" },
-  { q: "国民健康保険が高すぎる…", href: "/insurance/kenko-hoken" },
-  { q: "節税って何をすればいいかわからない", href: "/savings" },
-  { q: "開業届ってどこに出すの？", href: "/startup" },
-  { q: "住民税の請求が突然来てびっくりした", href: "/tax/jumin-zei" },
-  { q: "フリーランスの健康保険、どれが得？", href: "/insurance/kenko-hoken" },
-  { q: "経費にできるものって何？", href: "/savings/keihi" },
-  { q: "青色申告と白色申告の違いは？", href: "/tax/blue-white" },
-  { q: "iDeCoって本当に節税になる？", href: "/savings/ideco" },
-  { q: "副業収入の確定申告ってどうするの？", href: "/tax/fukugyo" },
-  { q: "消費税の納税義務、いつから始まる？", href: "/tax/shohi-zei" },
+  { q: "国民健康保険が高すぎる…", href: "/guides/shakai-hoken" },
+  { q: "節税って何をすればいいかわからない", href: "/guides/setsuzei" },
+  { q: "開業届ってどこに出すの？", href: "/guides/kaigyodoke" },
+  { q: "住民税の請求が突然来てびっくりした", href: "/guides/kakutei-shinkoku" },
+  { q: "フリーランスの健康保険、どれが得？", href: "/guides/shakai-hoken" },
+  { q: "経費にできるものって何？", href: "/tools/expense" },
+  { q: "青色申告と白色申告の違いは？", href: "/guides/blue-declaration" },
+  { q: "iDeCoって本当に節税になる？", href: "/guides/ideco" },
+  { q: "副業収入の確定申告ってどうするの？", href: "/guides/kakutei-shinkoku" },
+  { q: "消費税の納税義務、いつから始まる？", href: "/guides/invoice" },
 ];
 
 
@@ -123,7 +123,7 @@ export default function HomePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link
-                href="/tax/kakutei-shinkoku"
+                href="/guides/kakutei-shinkoku"
                 className="inline-flex items-center justify-center gap-2 bg-white text-emerald-700 font-semibold px-6 py-3 rounded-xl hover:bg-emerald-50 transition-colors"
               >
                 確定申告ガイドを読む

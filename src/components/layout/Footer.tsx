@@ -23,19 +23,19 @@ export default function Footer() {
           <div>
             <h3 className="text-white text-sm font-semibold mb-3">コンテンツ</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/tax" className="hover:text-emerald-400 transition-colors">税金ガイド</Link></li>
-              <li><Link href="/insurance" className="hover:text-emerald-400 transition-colors">社会保険</Link></li>
-              <li><Link href="/startup" className="hover:text-emerald-400 transition-colors">開業ガイド</Link></li>
-              <li><Link href="/savings" className="hover:text-emerald-400 transition-colors">節税テク</Link></li>
+              <li><Link href="/guides/kakutei-shinkoku" className="hover:text-emerald-400 transition-colors">税金ガイド</Link></li>
+              <li><Link href="/guides/shakai-hoken" className="hover:text-emerald-400 transition-colors">社会保険</Link></li>
+              <li><Link href="/guides/kaigyo" className="hover:text-emerald-400 transition-colors">開業ガイド</Link></li>
+              <li><Link href="/guides/setsuzei" className="hover:text-emerald-400 transition-colors">節税テク</Link></li>
             </ul>
           </div>
 
           <div>
             <h3 className="text-white text-sm font-semibold mb-3">ツール</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/tools" className="hover:text-emerald-400 transition-colors">手取り計算機</Link></li>
+              <li><Link href="/tools/teardown" className="hover:text-emerald-400 transition-colors">手取り計算機</Link></li>
               <li><Link href="/tools/invoice" className="hover:text-emerald-400 transition-colors">インボイス試算</Link></li>
-              <li><Link href="/tools/pension" className="hover:text-emerald-400 transition-colors">国民年金計算</Link></li>
+              <li><Link href="/tools/kokuho" className="hover:text-emerald-400 transition-colors">国保料シミュレーター</Link></li>
             </ul>
           </div>
 

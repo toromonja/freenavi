@@ -48,6 +48,12 @@ export const metadata: Metadata = {
     description: "フリーランスの確定申告・インボイス・社会保険・節税をわかりやすく解説。手取り計算ツールも無料。",
     images: ["/ogp.svg"],
   },
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico" },
+    ],
+  },
   robots: {
     index: true,
     follow: true,
