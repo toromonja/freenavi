@@ -7,7 +7,6 @@ import {
   Calculator,
   ArrowRight,
   AlertCircle,
-  TrendingUp,
   ChevronRight,
 } from "lucide-react";
 
@@ -76,27 +75,6 @@ const worries = [
   { q: "消費税の納税義務、いつから始まる？", href: "/tax/shohi-zei" },
 ];
 
-// 2026年重要トピック
-const recentTopics = [
-  {
-    tag: "2026年改正",
-    title: "定額減税の継続・拡充について",
-    href: "/tax/teigaku-genzei-2026",
-    date: "2026-03-01",
-  },
-  {
-    tag: "インボイス",
-    title: "免税事業者からの仕入税額控除（2割特例）の経過措置",
-    href: "/tax/invoice-keikasochi",
-    date: "2026-02-15",
-  },
-  {
-    tag: "社会保険",
-    title: "2026年度 国民健康保険料の上限額引き上げ",
-    href: "/insurance/kokumin-hoken-2026",
-    date: "2026-02-01",
-  },
-];
 
 export default function HomePage() {
   return (
@@ -238,37 +216,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 最新の制度変更 */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">
-              2026年 重要トピック
-            </h2>
-            <p className="text-gray-500 text-sm">最新の制度改正・変更点をまとめています</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {recentTopics.map((topic) => (
-              <Link
-                key={topic.href}
-                href={topic.href}
-                className="bg-white border border-gray-100 rounded-2xl p-5 hover:shadow-md hover:border-emerald-200 transition-all group"
-              >
-                <div className="flex items-center gap-2 mb-3">
-                  <TrendingUp className="w-4 h-4 text-emerald-500" />
-                  <span className="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full">
-                    {topic.tag}
-                  </span>
-                </div>
-                <h3 className="font-semibold text-gray-800 leading-snug group-hover:text-emerald-700 mb-3">
-                  {topic.title}
-                </h3>
-                <p className="text-xs text-gray-400">{topic.date}</p>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
