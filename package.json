@@ -5,14 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build:cf": "opennextjs-cloudflare build",
-    "preview": "opennextjs-cloudflare preview",
-    "deploy": "opennextjs-cloudflare deploy",
+    "build:cf": "next build",
+    "deploy": "wrangler deploy",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
-    "@opennextjs/cloudflare": "^1.17.1",
     "lucide-react": "^0.577.0",
     "next": "16.1.6",
     "react": "19.2.3",
